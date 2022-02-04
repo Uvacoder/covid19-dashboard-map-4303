@@ -45,9 +45,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Updates [skip ci]'",
+    "deploy": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier-eslint --eslint-config-path ./config/eslint.config.js --write $PWD'**/*.js'",
     "lint": "eslint -c ./config/eslint.config.js . --ext .js",
@@ -66,7 +66,7 @@
       "yarn lint"
     ]
   },
-  "homepage": "",
+  "homepage": "https://uvacoder.github.io/covid19-dashboard-map",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamalston/COVID-19-Dashboard"
